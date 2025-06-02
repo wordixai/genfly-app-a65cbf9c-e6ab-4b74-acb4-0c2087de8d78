@@ -4,89 +4,90 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 249 249 247;
+    --foreground: 24 24 24;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 255 255 255;
+    --card-foreground: 24 24 24;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 255 255 255;
+    --popover-foreground: 24 24 24;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 24 24 24;
+    --primary-foreground: 249 249 247;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 240 240 235;
+    --secondary-foreground: 24 24 24;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 240 240 235;
+    --muted-foreground: 115 115 115;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 240 240 235;
+    --accent-foreground: 24 24 24;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 239 68 68;
+    --destructive-foreground: 255 255 255;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 229 229 229;
+    --input: 229 229 229;
+    --ring: 24 24 24;
 
     --radius: 0.5rem;
 
-    --sidebar-background: 0 0% 98%;
+    --sidebar-background: 249 249 247;
+    --sidebar-foreground: 24 24 24;
+    --sidebar-primary: 24 24 24;
+    --sidebar-primary-foreground: 249 249 247;
+    --sidebar-accent: 240 240 235;
+    --sidebar-accent-foreground: 24 24 24;
+    --sidebar-border: 229 229 229;
+    --sidebar-ring: 24 24 24;
 
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* Anthropic brand colors */
+    --clay: 205 150 130;
+    --oat: 225 215 195;
+    --coral: 235 135 120;
+    --cactus: 180 200 170;
+    --heather: 190 180 200;
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    --background: 24 24 24;
+    --foreground: 249 249 247;
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 24 24 24;
+    --card-foreground: 249 249 247;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 24 24 24;
+    --popover-foreground: 249 249 247;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 249 249 247;
+    --primary-foreground: 24 24 24;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 38 38 38;
+    --secondary-foreground: 249 249 247;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 38 38 38;
+    --muted-foreground: 163 163 163;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 38 38 38;
+    --accent-foreground: 249 249 247;
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 220 38 38;
+    --destructive-foreground: 249 249 247;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --border: 38 38 38;
+    --input: 38 38 38;
+    --ring: 212 212 216;
+
+    --sidebar-background: 24 24 24;
+    --sidebar-foreground: 249 249 247;
+    --sidebar-primary: 249 249 247;
+    --sidebar-primary-foreground: 24 24 24;
+    --sidebar-accent: 38 38 38;
+    --sidebar-accent-foreground: 249 249 247;
+    --sidebar-border: 38 38 38;
+    --sidebar-ring: 212 212 216;
   }
 }
 
@@ -97,5 +98,385 @@
 
   body {
     @apply bg-background text-foreground;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+}
+
+/* Custom Anthropic brand colors */
+.u-bg-clay {
+  background-color: rgb(var(--clay));
+}
+
+.u-bg-oat {
+  background-color: rgb(var(--oat));
+}
+
+.u-bg-coral {
+  background-color: rgb(var(--coral));
+}
+
+.u-bg-cactus {
+  background-color: rgb(var(--cactus));
+}
+
+.u-bg-heather {
+  background-color: rgb(var(--heather));
+}
+
+/* Typography utilities */
+.u-display-xxl {
+  font-size: 4rem;
+  line-height: 1.1;
+  font-weight: 300;
+}
+
+.u-display-xl {
+  font-size: 3rem;
+  line-height: 1.1;
+  font-weight: 300;
+}
+
+.u-display-l {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  font-weight: 400;
+}
+
+.u-display-m {
+  font-size: 2rem;
+  line-height: 1.2;
+  font-weight: 400;
+}
+
+.u-display-s {
+  font-size: 1.5rem;
+  line-height: 1.3;
+  font-weight: 500;
+}
+
+.u-paragraph-l {
+  font-size: 1.25rem;
+  line-height: 1.6;
+}
+
+.u-paragraph-m {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.u-paragraph-s {
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+.u-detail-m {
+  font-size: 0.875rem;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.u-font-display-serif {
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+/* Layout utilities */
+.u-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.u-grid-desktop {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 2rem;
+}
+
+.u-column-4 {
+  grid-column: span 4;
+}
+
+.u-column-8 {
+  grid-column: span 8;
+}
+
+.u-vflex-stretch-top {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+
+.u-vflex-center-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.u-hflex-between-center {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.u-gap-xl {
+  gap: 3rem;
+}
+
+.u-gap-l {
+  gap: 2rem;
+}
+
+.u-gap-m {
+  gap: 1rem;
+}
+
+.u-gap-s {
+  gap: 0.5rem;
+}
+
+.u-mb-6 {
+  margin-bottom: 3rem;
+}
+
+.u-mt-6 {
+  margin-top: 3rem;
+}
+
+.u-mb-8 {
+  margin-bottom: 4rem;
+}
+
+.u-alignment-center {
+  text-align: center;
+}
+
+.u-color-faded {
+  color: rgb(var(--muted-foreground));
+}
+
+.u-radius-medium {
+  border-radius: 0.75rem;
+}
+
+.u-max-width-20ch {
+  max-width: 20ch;
+}
+
+.u-max-width-30ch {
+  max-width: 30ch;
+}
+
+.u-weight-medium {
+  font-weight: 500;
+}
+
+/* Animation utilities */
+.u-animated-text {
+  opacity: 0;
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Card styles */
+.card {
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+}
+
+.card-body {
+  padding: 2rem;
+  position: relative;
+  z-index: 10;
+}
+
+/* Launch hero specific styles */
+.launch_hero_card {
+  position: relative;
+  border-radius: 1rem;
+  padding: 2rem;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.2s ease-in-out;
+  overflow: hidden;
+}
+
+.launch_hero_card:hover {
+  transform: translateY(-4px);
+}
+
+.launch_hero_card_info {
+  position: relative;
+  height: 120px;
+  margin: 1rem 0;
+}
+
+.launch_hero_card_front,
+.launch_hero_card_back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.launch_hero_card_back {
+  opacity: 0;
+}
+
+.launch_hero_card:hover .launch_hero_card_front {
+  opacity: 0;
+}
+
+.launch_hero_card:hover .launch_hero_card_back {
+  opacity: 1;
+}
+
+.launch_hero_card_front img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Video player styles */
+.video_wrap {
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
+  background: #000;
+  aspect-ratio: 16/9;
+}
+
+.video_player_thumbnail {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.video_player_thumbnail_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video_player_play_btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.video_player_play_btn:hover {
+  background: white;
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+/* Quote styles */
+.quote_mark {
+  font-size: 4rem;
+  line-height: 1;
+  color: rgb(var(--muted-foreground));
+  margin-bottom: 1rem;
+}
+
+/* Button styles */
+.btn_main_wrap {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+.btn_main_wrap[data-wf--button-main--style="primary"] {
+  background-color: rgb(var(--primary));
+  color: rgb(var(--primary-foreground));
+}
+
+.btn_main_wrap[data-wf--button-main--style="primary"]:hover {
+  background-color: rgba(var(--primary), 0.9);
+}
+
+.btn_main_wrap[data-wf--button-main--style="secondary"] {
+  background-color: transparent;
+  color: rgb(var(--foreground));
+  border-color: rgb(var(--border));
+}
+
+.btn_main_wrap[data-wf--button-main--style="secondary"]:hover {
+  background-color: rgb(var(--accent));
+}
+
+.u-btn-group {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .u-grid-desktop {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .u-column-4,
+  .u-column-8 {
+    grid-column: span 1;
+  }
+  
+  .u-display-xxl {
+    font-size: 2.5rem;
+  }
+  
+  .u-display-xl {
+    font-size: 2rem;
+  }
+  
+  .u-display-l {
+    font-size: 1.75rem;
+  }
+  
+  .launch_hero_card_row {
+    grid-template-columns: 1fr;
   }
 }
