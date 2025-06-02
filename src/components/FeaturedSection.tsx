@@ -33,34 +33,41 @@ const FeaturedSection = () => {
   ];
 
   return (
-    <section className="py-16">
+    <section className="g_section_wrap">
+      <div className="py-16"></div>
       <div className="u-container">
         <div className="u-grid-desktop">
           <div className="u-column-4">
-            <h2 className="u-display-s u-max-width-20ch">Featured</h2>
+            <div className="g_heading u-display-s u-max-width-20ch">
+              <p>Featured</p>
+            </div>
           </div>
           <div className="u-column-8">
-            <ul className="space-y-6">
+            <ul aria-label="Accordion Control Group Buttons" role="list" className="w-list-unstyled">
               {articles.map((article, index) => (
-                <li key={index}>
-                  <a href={article.link} className="block group">
-                    <div className="u-detail-m">
-                      <div className="w-full">
-                        <h3 className="u-weight-medium group-hover:text-primary transition-colors">
-                          {article.title}
-                        </h3>
-                      </div>
-                      <div className="u-hflex-between-center w-full u-max-width-30ch mt-2">
+                <li key={index} role="region">
+                  <div className="article-list-item u-detail-m">
+                    <div className="u-width-full">
+                      <h3 className="u-weight-medium">{article.title}</h3>
+                    </div>
+                    <div className="u-hflex-between-center u-width-full u-max-width-30ch">
+                      <div>
                         <div className="u-color-faded">{article.category}</div>
-                        <div className="u-color-faded">{article.date}</div>
+                      </div>
+                      <div>
+                        <div className="u-color-faded">&nbsp;{article.date}</div>
                       </div>
                     </div>
-                  </a>
+                    <a href={article.link} className="absolute inset-0 z-10">
+                      <span className="sr-only">Read article</span>
+                    </a>
+                  </div>
                 </li>
               ))}
             </ul>
           </div>
         </div>
+        <div className="py-16"></div>
       </div>
     </section>
   );
